@@ -1,0 +1,80 @@
+Regression
+Regression analysis is one of the most important fields in statistics and machine learning. There are many regression methods available. Linear regression is one of them.
+
+Linear Regression
+Linear regression is probably one of the most important and widely used regression techniques. It’s among the simplest regression methods. One of its main advantages is the ease of interpreting results.
+
+
+Linear Equation : #y = mx + b [m->slop, b->intercept] --------> In our case avg_hb_pm = m * age + b  (avg_hb_pm - dependent), (age - independent)
+we're calculating avg_hb_pm based on age.
+
+Problem Formulation
+When implementing linear regression of some dependent variable 𝑦 on the set of independent variables x. The age is independent and avg_hb_pm ia dependent.
+
+
+Regression Performance
+The coefficient of determination, denoted as 𝑅², tells you which amount of variation in 𝑦 can be explained by the dependence on 𝐱 using the particular regression model. Larger 𝑅² indicates a better fit and means that the model can better explain the variation of the output with different inputs.
+
+
+Tools
+Let’s introduce the most popular libraries that can be found in every Python based Machine Learning or Data Science related project.
+    • NumPy — a library for scientific computing, perfect for Multivariable Calculus & Linear Algebra. Provides ndarray class which can be compared to Python list that can be treated as vector or matrix.
+    • Matplotlib — toolkit for data visualisation, allows to create various 2d and 3d graphs.
+    • Pandas—this library is a wrapper for Matplotlib and NumPy libraries. It provides DataFrame class. It treats NumPy matrices as tables, allowing access to rows and columns by their attached names. Very helpful in data loading, saving, wrangling, and exploration process. Provides an interface of functions that makes deployment faster.
+    
+    
+Loading data
+Let’s start by reading data from the .xlsx file to DataFrame object of Pandas and displaying a few data rows. To achieve that read_excel function will be used. Function head renders first five rows of data in the form of the pleasantly readable HTML table.
+
+
+Visulization
+We can plot available ages and avg_hb_pm in form of scatter plot where the red markers show the available of data point and we draw this blue line for best fit these data point.
+We  calculate the error between the actual data point and the predicted data point which is predicted by the linear equation. find the line who give us the minimum error.
+
+
+Splitting the Data
+Split the data into training and testing data. But here's less features so no need to splitting.
+
+
+Training the Model
+We use here sklearn for linear model. sklearn is a library it's also called scikit learn.
+
+
+Predicting the Model
+Let's see how well our model performs on the test data for which we already have the lable.Here we make a new_age excel file and put some ages in it find the avg_hb_pm with accuracy of 81%.
+We can see that our model is something good!
+
+
+Acuuracy Of Model
+Acuuracy Of Model is the way of assessing the performance of the  model.
+
+
+The Coeffecient
+In linear equation a slope(m) as coefficent and intercept is bias.
+
+
+Conclusion
+This is an medical domain problem where find out average heart beat per minute based on age. So In this model get a data and train best fit line for predict the avg_hb_pm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
